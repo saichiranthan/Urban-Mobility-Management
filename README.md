@@ -36,7 +36,7 @@ The Urban Mobility Management project focuses on exploring various machine learn
    - Description: Predicts average travel times during normal and peak hours.
    - Run command:
      ```
-     python linear_regression.py
+     python regression_model.py
      ```
 
 2. **YOLO Model**: 
