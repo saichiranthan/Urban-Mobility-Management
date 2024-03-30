@@ -36,21 +36,19 @@ The Urban Mobility Management project focuses on exploring various machine learn
    - Description: Predicts average travel times during normal and peak hours.
    - Run command:
      ```
-     python regression_model.py
+     python PredictTime.py
      ```
 
 2. **YOLO Model**: 
    - Description: Detects vehicles and calculates traffic density.
-   - Run command:
-     ```
-     python yolo_model.py
-     ```
+   -For in depth understanding of Vehicle detection refer : "https://github.com/MaryamBoneh/Vehicle-Detection"
 
 3. **Route Optimization Algorithm**: 
    - Description: Finds the most optimized route considering various factors.
+   - This will be the main which has been integrated with other models
    - Run command:
      ```
-     python route_optimization.py
+     python Astar.py
      ```
 
 For detailed instructions on running each component, refer to the documentation in the respective directories.
