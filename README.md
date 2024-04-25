@@ -1,62 +1,47 @@
-# Urban Mobility Management
+# Team08 - Urban Mobility Management
 
-Urban Mobility Management is a project aimed at leveraging AI, machine learning, and data analytics to develop intelligent solutions for smart transportation planning. This project was developed for educational purposes as part of a course on urban mobility and transportation systems.
+## Introduction
+Team08's Urban Mobility Management project focuses on implementing various models and techniques to manage urban mobility effectively. This project includes regression models for predicting traffic flow, vehicle detection for real-time traffic analysis, and integration of different models for comprehensive urban mobility management.
 
-## Table of Contents
-- [Overview](#overview)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+## Requirements
+To run this project, you need to have the following libraries installed:
 
-## Overview
-The Urban Mobility Management project focuses on exploring various machine learning techniques and algorithms to address challenges in urban transportation. The project encompasses three main components:
-
-1. **Linear Regression Model**: Predicting average travel times during normal and peak hours using linear regression.
-
-2. **YOLO Model**: Utilizing the YOLO (You Only Look Once) object detection algorithm to predict traffic density and use it to detemine heuristics.
-
-3. **Route Optimization Algorithm**: Implementing the A* search algorithm to find the most optimized route based on various factors such as traffic density, travel time, and distance.
-
-## Features
-- Predicting travel times using  regression models
-- Detecting vehicles and calculating traffic density with YOLO
-- Finding optimal routes using the A* search algorithm
-- Considering multiple factors like travel time, traffic density, and distance in route optimization
-
-## Installation
-1. Clone the repository:git clone https://github.com/your-username/urban-mobility-management.git 
-2. Navigate to the project directory: 
-3. Install the required dependencies:
-
+- scikit-learn (`sklearn`)
+- Matplotlib
+- NumPy
+- Pandas
+- Seaborn
+- itertools
+- Folium
+- Math
+- Random
+- TensorFlow
+- OpenCV-Python (`opencv-python`) (version 4.1.2 or higher)
+- Pillow (version 8.0.0 or higher)
+- PyYAML (version 5.3.1 or higher)
+- SciPy (version 1.4.1 or higher)
+- PyTorch (version 1.7.0 or higher)
+- torchvision (version 0.8.1 or higher)
+- tqdm (version 4.41.0 or higher)
+- TensorBoard (version 2.4.1 or higher)
 
 ## Usage
-1. **Linear Regression Model**: 
-   - Description: Predicts average travel times during normal and peak hours.
-   - Run command:
-     ```
-     python PredictTime.py
-     ```
+1. Clone this repository.
+2. Navigate to the directory.
+3. Install the required dependencies using `pip install -r requirements.txt`.
+4. Run the main file `Astar.py` for integration of models.
+5. If you are retraining the models, make sure to change the path of datasets used accordingly in all the files.
 
-2. **YOLO Model**: 
-   - Description: Detects vehicles and calculates traffic density.
-   -For in depth understanding of Vehicle detection refer : "https://github.com/MaryamBoneh/Vehicle-Detection"
+## Datasets
+- The `Datasets` folder contains datasets used for regression models.
+- The image/video dataset for vehicle detection is located in the `vehicle detection` folder.
 
-3. **Route Optimization Algorithm**: 
-   - Description: Finds the most optimized route considering various factors.
-   - This will be the main which has been integrated with other models
-   - Run command:
-     ```
-     python Astar.py
-     ```
+## Notes
+- Random functions are used to simulate densities in junctions for simplicity, as real-time traffic cams cannot be accessed.
+- For in-depth understanding of vehicle detection, refer to [Vehicle Detection GitHub Repository](https://github.com/MaryamBoneh/Vehicle-Detection).
 
-For detailed instructions on running each component, refer to the documentation in the respective directories.
+## Contributors
+- [Sai Chiranthan H M, Abhishek B, Arushi Biswas, Deshmukh]
 
-## Contributing
-Contributions to this project are welcome. Please follow coding standards and submit pull requests for any improvements or bug fixes. For major changes, please open an issue first to discuss the proposed changes.
-
-Please note that the provided file contains further information about the project, including details on the algorithms, computational requirements, and references. Refer to the file for more comprehensive documentation.
-
-**Note:** This project is still ongoing, and contributions are encouraged to enhance its functionality and effectiveness in urban mobility management.
-
+## License
+[License information]
